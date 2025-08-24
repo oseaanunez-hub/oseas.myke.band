@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenguajes de Programación</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: #0a0a0a;
+      color: #00ff7f;
+      line-height: 1.6;
+    }
+
+    /* ENCABEZADO */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #003300, #001100);
+      border-bottom: 3px solid #00ff7f;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+      color: #00ff7f;
+      text-shadow: 0 0 12px #00ff7f;
+    }
+
+    /* CONTENIDO */
+    .contenido {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(0, 255, 127, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,255,127,0.2);
+    }
+    .contenido h2 {
+      color: #00ff7f;
+      border-left: 5px solid #00ff7f;
+      padding-left: 10px;
+      margin-top: 25px;
+      text-shadow: 0 0 5px #00ff7f;
+    }
+    .contenido p {
+      margin-top: 10px;
+    }
+
+    /* BLOQUES DE LENGUAJES */
+    .lenguajes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .lenguaje {
+      background: #111;
+      border: 1px solid #00ff7f;
+      border-radius: 10px;
+      padding: 20px;
+      transition: 0.3s;
+    }
+    .lenguaje h3 {
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      color: #00ff7f;
+    }
+    .lenguaje:hover {
+      background: #0f0f0f;
+      box-shadow: 0 0 15px #00ff7f;
+      transform: translateY(-5px);
+    }
+
+    /* BOTÓN VOLVER */
+    a.volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 18px;
+      background: #00ff7f;
+      color: #0a0a0a;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.volver:hover {
+      background: #00cc66;
+      box-shadow: 0 0 12px #00ff7f;
+    }
+
+    /* PIE */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      border-top: 2px solid #00ff7f;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #00ff7f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lenguajes de Programación</h1>
+  </header>
+
+  <section class="contenido">
+    <p>
+      Los lenguajes de programación son la base del desarrollo de software, 
+      permitiendo que los programadores den instrucciones a las computadoras 
+      de manera estructurada y comprensible. Cada lenguaje está diseñado 
+      con un propósito específico.
+    </p>
+
+    <div class="lenguajes">
+      <div class="lenguaje">
+        <h3>🐍 Python</h3>
+        <p>
+          Muy popular por su facilidad de aprendizaje y gran variedad de usos: 
+          inteligencia artificial, desarrollo web, automatización y más.
+        </p>
+      </div>
+
+      <div class="lenguaje">
+        <h3>☕ Java</h3>
+        <p>
+          Utilizado en aplicaciones empresariales, móviles (Android) y sistemas 
+          de gran escala gracias a su portabilidad y robustez.
+        </p>
+      </div>
+
+      <div class="lenguaje">
+        <h3>🌐 JavaScript</h3>
+        <p>
+          El lenguaje del navegador por excelencia, fundamental para el desarrollo 
+          web interactivo y dinámico.
+        </p>
+      </div>
+
+      <div class="lenguaje">
+        <h3>⚙️ C++</h3>
+        <p>
+          Potente y veloz, empleado en videojuegos, sistemas operativos 
+          y aplicaciones que requieren alto rendimiento.
+        </p>
+      </div>
+
+      <div class="lenguaje">
+        <h3>#️⃣ C#</h3>
+        <p>
+          Lenguaje de Microsoft muy usado en aplicaciones de escritorio, 
+          videojuegos con Unity y entornos empresariales.
+        </p>
+      </div>
+    </div>
+
+    <a href="index.html" class="volver">👈Regresar</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Lenguajes de Programación - Proyecto Web
+  </footer>
+</body>
+</html>

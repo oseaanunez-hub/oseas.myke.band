@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet y la Web</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #2c5364, #203a43);
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    /* ENCABEZADO */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* CONTENIDO */
+    .contenido {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+    .contenido h2 {
+      color: #ff8a65;
+      border-bottom: 3px solid #ff8a65;
+      padding-bottom: 6px;
+      margin-top: 25px;
+    }
+
+    /* GRID */
+    .secciones {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .tema {
+      background: rgba(0,0,0,0.6);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #ff8a65;
+      transition: 0.3s;
+    }
+    .tema h3 {
+      margin-bottom: 10px;
+      color: #ff8a65;
+    }
+    .tema:hover {
+      background: rgba(0,0,0,0.8);
+      box-shadow: 0 0 20px #ff8a65;
+      transform: translateY(-5px);
+    }
+
+    /* BOTÓN VOLVER */
+    a.volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background: #ff8a65;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.volver:hover {
+      background: #ff5722;
+      box-shadow: 0 0 15px #ff8a65;
+    }
+
+    /* PIE */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #ff8a65;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Internet y la Web</h1>
+  </header>
+
+  <section class="contenido">
+    <p>
+      Aunque muchas veces se confunden, el <b>Internet</b> y la <b>Web</b> no son lo mismo. 
+      Internet es la red mundial de computadoras interconectadas, mientras que la Web es un 
+      sistema que funciona dentro de esa red y permite acceder a páginas y contenidos.
+    </p>
+
+    <div class="secciones">
+      <div class="tema">
+        <h3>🌐 Internet</h3>
+        <p>
+         Internet es la gran red global de redes, una infraestructura de comunicación que conecta 
+         dispositivos en todo el mundo. Su esencia reside en la interconexión física y lógica de millones de
+          redes computacionales, desde pequeñas redes domésticas hasta grandes infraestructuras gubernamentales y corporativas.
+      </p>
+      <p>Esta red funciona mediante protocolos estandarizados, siendo TCP/IP el más fundamental, que establece las reglas para el empaquetamiento,
+         direccionamiento, transmisión y recepción de datos.</p>
+        </div>
+
+      <div class="tema">
+        <h3>💻 La Web</h3>
+        <p>
+         La Web, formalmente conocida como World Wide Web, es un sistema de información que opera sobre Internet. Su creación por Tim Berners-Lee en 1989 revolucionó
+          la forma en que interactuamos con la información en línea. La Web se construye sobre tres pilares tecnológicos fundamentales: HTML para la estructuración de contenido, 
+          HTTP para la transferencia de datos y las URLs para la localización de recursos.
+        </p>
+        <p>Lo que distingue a la Web es su naturaleza de hipertexto interconectado, donde documentos digitales pueden enlazarse entre sí mediante hipervínculos, creando una vasta red 
+            de conocimiento accesible de manera no lineal. </p>
+      </div>
+    </div>
+
+    <h2>Relación entre Internet y la Web</h2>
+    <p>
+      Internet es como la “carretera” y la Web son los “vehículos” que viajan en ella. 
+      Sin Internet no habría Web, pero Internet puede existir sin la Web, ya que también 
+      se usa para otras funciones como el correo electrónico o la mensajería instantánea.
+    </p>
+
+    <a href="index.html" class="volver">👈Regresar</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Internet y la Web - Proyecto Web
+  </footer>
+</body>
+</html>

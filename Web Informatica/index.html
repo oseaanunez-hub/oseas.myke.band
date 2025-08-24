@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Informática</title>
+  <style>
+    /* ----------- ESTILO GENERAL ----------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(rgba(158, 211, 241, 0.7), rgba(0,0,0,0.8)),
+                  url('C:\Users\PC\OneDrive\Imágenes\informatica\images (3).jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #f1f1f1;
+    }
+
+    /* ----------- ENCABEZADO ----------- */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.6);
+      border-bottom: 4px solid #00d4ff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 3em;
+      color: #00d4ff;
+      text-shadow: 0 0 15px #00d4ff;
+    }
+    header p {
+      font-size: 1.3em;
+      color: #ddd;
+      margin-top: 10px;
+    }
+
+    /* ----------- INTRODUCCIÓN ----------- */
+    .intro {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 25px;
+      text-align: justify;
+      background: rgba(0,0,0,0.5);
+      border-radius: 15px;
+      border: 1px solid #00d4ff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+    .intro h2 {
+      color: #00d4ff;
+      margin-bottom: 15px;
+    }
+    .intro p {
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+
+    /* ----------- GALERÍA DE IMÁGENES ----------- */
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+    .imagenes img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 2px solid #00d4ff;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .imagenes img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00d4ff;
+    }
+
+    /* ----------- MENÚ DE ENLACES ----------- */
+    nav {
+      margin: 50px auto;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    nav a {
+      text-decoration: none;
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      padding: 10px;
+      border-radius: 15px;
+      color: #fff;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    nav a:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px #00d4ff;
+      background: linear-gradient(135deg, #0066ff, #00d4ff);
+    }
+
+    /* ----------- PIE DE PÁGINA ----------- */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.7);
+      border-top: 2px solid #00d4ff;
+      font-size: 0.9em;
+      margin-top: 40px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>El Mundo de la Informática</h1>
+    <p>Explorando la ciencia que cambió la historia del mundo</p>
+  </header>
+
+  <section class="intro">
+    <h2>Introducción</h2>
+    <p>
+      La informática es, en su esencia, la ciencia de la transformación sistemática de la información. Lejos de limitarse
+       al simple uso de herramientas digitales, constituye un cuerpo de conocimiento profundo que se erige sobre la base de la abstracción,
+        la lógica y los algoritmos para modelar y resolver problemas de manera automatizada. Su objetivo fundamental es establecer los principios
+         que hacen posible que una máquina, carente de entendimiento propio, pueda ejecutar procesos que simulen inteligencia y entreguen resultados útiles para el ser humano.
+  </section>
+
+  <section class="imagenes">
+    <article class="card">
+    <h2>Historia de la informática</h2>
+    <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\pc antiguas.jpeg" alt="Historia de la informática">
+    </article>
+     <article class="card">
+    <h2>Programación</h2>
+    <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\programacion.jpeg" alt="Programación">
+     </article>
+      <article class="card">
+    <h2>Redes informáticas</h2>
+    <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\tipos-redes-informaticas.jpg" alt="Redes informáticas">
+      </article>
+       <article class="card">
+    <h2>Inteligencia Artificial</h2>
+    <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\IA.jpeg" alt="Inteligencia Artificial">
+     </article>
+  </section>
+
+  <nav>
+     <a href="historia.html">📜 Historia de la informática</a>
+    <a href="componentes.html">🖥️ Componentes</a>
+    <a href="areas.html">🌐 Áreas de la informática</a>
+    <a href="lenguajes.html">💻 Lenguajes de programación</a>
+    <a href="internet.html">🌍 Internet y la Web</a>
+    <a href="aplicaciones.html">⚙️ Aplicaciones</a>
+    <a href="seguridad.html">🔒 Seguridad informática</a>
+    <a href="tendencias.html">🚀 Nuevas tendencias</a>
+    <a href="etica.html">⚖️ Ética y sociedad</a>
+    <a href="lineatiempo.html">🕒 Línea de tiempo</a>
+  </nav>
+
+  <footer>
+    &copy; 2025 Proyecto Web - La Informática | Diseñado por Estudiante
+  </footer>
+</body>
+</html>

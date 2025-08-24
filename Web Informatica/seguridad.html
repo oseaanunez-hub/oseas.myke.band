@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad Informática</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: #0a0a0a;
+      color: #00ff7f;
+      line-height: 1.6;
+    }
+
+    /* ENCABEZADO */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #111, #333);
+      border-bottom: 3px solid #ff0000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+      color: #ff0000;
+      text-shadow: 0 0 12px #ff0000;
+    }
+
+    /* CONTENIDO */
+    .contenido {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(0, 255, 127, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,255,127,0.2);
+    }
+    .contenido h2 {
+         text-align: justify;
+      color: #ff0000;
+      border-left: 5px solid #ff0000;
+      padding-left: 10px;
+      margin-top: 25px;
+      text-shadow: 0 0 5px #ff0000;
+    }
+    .contenido p {
+      margin-top: 10px;
+    }
+
+    /* GRID DE TEMAS */
+    .temas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .tema {
+      background: #111;
+      border: 1px solid #ff0000;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: justify;
+      transition: 0.3s;
+    }
+    .tema h3 {
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      color: #ff0000;
+    }
+    .tema img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ff0000;
+    }
+    .tema:hover {
+      background: #1a1a1a;
+      box-shadow: 0 0 20px #ff0000;
+      transform: translateY(-5px);
+    }
+
+    /* BOTÓN VOLVER */
+    a.volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background: #ff0000;
+      color: #0a0a0a;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.volver:hover {
+      background: #cc0000;
+      box-shadow: 0 0 12px #ff0000;
+    }
+
+    /* PIE */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #ff0000;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seguridad Informática</h1>
+  </header>
+
+  <section class="contenido">
+    <p>
+     La seguridad informática se erige como una disciplina fundamental en el ecosistema digital contemporáneo, respondiendo 
+     a la necesidad crítica de proteger los activos de información frente a un panorama de amenazas cada vez más sofisticado y evolutivo. 
+     Su objetivo trasciende la mera protección técnica para convertirse en un pilar estratégico que garantiza la continuidad operativa, preserva
+      la confianza digital y salvaguarda los derechos individuales y colectivos en el ciberespacio.
+    </p>
+
+    <div class="temas">
+      <div class="tema">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\antivirus.jpeg" alt="Antivirus">
+        <h3>🛡️ Antivirus y Anti-malware</h3>
+        <p>
+       Representan la primera línea de defensa en la protección digital, evolucionando desde herramientas simples de detección
+        de virus hasta sistemas complejos capaces de enfrentar amenazas sofisticadas en tiempo real.
+        </p>
+      </div>
+
+      <div class="tema">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Firewall.jpeg" alt="Firewall">
+        <h3>🔥 Firewall</h3>
+        <p>
+          Constituye uno de los pilares fundamentales de la seguridad de red, actuando como una barrera defensiva esencial
+           entre redes confiables y no confiables. Su función primordial es controlar el tráfico mediante la aplicación de un conjunto
+            de reglas de seguridad predefinidas que determinan qué comunicaciones están permitidas y cuáles deben ser bloqueadas.
+        </p>
+      </div>
+
+      <div class="tema">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Cifrado de Datos.jpeg" alt="Cifrado">
+        <h3>🔒 Cifrado de Datos</h3>
+        <p>
+          constituye la piedra angular de la seguridad de la información moderna, representando el proceso fundamental mediante el 
+          cual se transforma información legible (texto plano) en un formato ilegible (texto cifrado) utilizando algoritmos matemáticos y claves secretas.
+        </p>
+      </div>
+
+      <div class="tema">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Contraseñas Seguras.jpeg" alt="Contraseñas Seguras">
+        <h3>🔑 Contraseñas Seguras</h3>
+        <p>
+          Las contraseñas constituyen la primera línea de defensa en la protección de nuestra identidad digital y activos en línea. 
+          A pesar de la aparición de métodos de autenticación más avanzados como la biometría o los tokens físicos, las contraseñas 
+          siguen siendo el mecanismo de autenticación más extendido a nivel global. Su importancia crítica radica en que representan la llave
+           de acceso a información sensible, cuentas bancarias, correos electrónicos y perfiles en redes sociales.
+        </p>
+      </div>
+
+      <div class="tema">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Respaldo de Información.jpeg" alt="Respaldo de Información">
+        <h3>💾 Respaldo de Información</h3>
+        <p>
+          El respaldo de información constituye uno de los pilares fundamentales de la continuidad del negocio y la preservación del conocimiento digital en la era moderna.
+           Lejos de ser una simple copia de datos, representa una estrategia integral de protección contra pérdidas irreversibles causadas por fallos tecnológicos, 
+           desastres naturales, errores humanos o ataques maliciosos.
+        </p>
+      </div>
+    </div>
+
+    <a href="index.html" class="volver">👈Regresar</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Seguridad Informática - Proyecto Web
+  </footer>
+</body>
+</html>

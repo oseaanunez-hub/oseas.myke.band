@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea de Tiempo de la Informática</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f9f9f9, #dfefff);
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #004e92, #ff6a00);
+      color: #fff;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background: linear-gradient(to bottom, #004e92, #ff6a00);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .evento {
+      padding: 20px 40px;
+      position: relative;
+      background: inherit;
+      width: 50%;
+    }
+
+    .evento::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -13px;
+      background-color: #fff;
+      border: 4px solid #ff6a00;
+      top: 30px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .izquierda {
+      left: 0;
+    }
+    .derecha {
+      left: 50%;
+    }
+    .derecha::after {
+      left: -13px;
+    }
+
+    .contenido {
+      padding: 20px 30px;
+      background: #fff;
+      position: relative;
+      border-radius: 10px;
+      border-left: 8px solid #004e92;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    /* Colores alternados en eventos */
+    .evento:nth-child(2n) .contenido {
+      border-left: 8px solid #ff6a00;
+    }
+    .evento:nth-child(3n) .contenido {
+      border-left: 8px solid #28a745;
+    }
+
+    .contenido:hover {
+      transform: scale(1.03);
+    }
+
+    .contenido h2 {
+      margin-top: 0;
+      color: #004e92;
+    }
+
+    .contenido img {
+      width: 60px;
+      height: 60px;
+      float: right;
+      margin-left: 15px;
+      border-radius: 50%;
+      border: 2px solid #ff6a00;
+      background: #eee;
+    }
+
+    a.volver {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      width: max-content;
+      padding: 12px 20px;
+      background: linear-gradient(to right, #004e92, #ff6a00);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.volver:hover {
+      background: linear-gradient(to right, #ff6a00, #004e92);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: #fff;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 800px) {
+      .timeline::after {
+        left: 31px;
+      }
+      .evento {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      .evento::after {
+        left: 15px;
+      }
+      .derecha {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Línea de Tiempo de la Informática</h1>
+  </header>
+
+  <div class="timeline">
+    <div class="evento izquierda">
+      <div class="contenido">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Ábaco.jpeg" alt="Ábaco">
+        <h2>Siglo XVII</h2>
+        <p>El ábaco representa mucho más que un simple instrumento de cálculo; es la materialización 
+            temprana del pensamiento computacional y la solución elegante a una necesidad humana fundamental: 
+            la de cuantificar, calcular y abstraer la realidad numérica.</p>
+      </div>
+    </div>
+
+    <div class="evento derecha">
+      <div class="contenido">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Máquina de Turing.jpeg" alt="Máquina de Turing">
+        <h2>1936</h2>
+        <p>La Máquina de Turing representa uno de los conceptos más fundamentales y profundos en la historia de la computación 
+            y las matemáticas. Propuesta por Alan Turing en 1936 en su artículo seminal "On Computable Numbers", no fue concebida 
+            como un dispositivo físico, sino como un modelo abstracto para estudiar los límites de la computación mecánica.</p>
+      </div>
+    </div>
+
+    <div class="evento izquierda">
+      <div class="contenido">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\ENIAC.jpeg" alt="ENIAC">
+        <h2>1946</h2>
+        <p>El ENIAC (Electronic Numerical Integrator and Computer) representa un hito fundamental en la historia de la computación, 
+            no solo por su capacidad de cálculo revolucionaria para su época, sino porque materializó el concepto de computación
+             electrónica programable, sentando las bases tecnológicas y conceptuales que definirían el desarrollo de la informática moderna.</p>
+      </div>
+    </div>
+
+    <div class="evento derecha">
+      <div class="contenido">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Microprocesador.jpeg" alt="Microprocesador">
+        <h2>1971</h2>
+        <p>El microprocesador representa la materialización más pura de la evolución tecnológica moderna, un circuito integrado que condensa
+             en apenas unos centímetros cuadrados la capacidad de procesamiento que hace décadas requería salas enteras de máquinas. 
+             No es simplemente un componente más en un sistema informático; es el corazón computational que ejecuta las instrucciones fundamentales 
+             que dan vida al software y permiten la transformación de datos en información accionable.</p>
+      </div>
+    </div>
+
+    <div class="evento izquierda">
+      <div class="contenido">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Internet.jpeg" alt="Internet">
+        <h2>Década de 1990</h2>
+        <p>Internet constituye la infraestructura global de comunicación más transformadora de la historia humana, un ecosistema complejo y descentralizado 
+        que ha redefinido radicalmente la manera en que la sociedad accede a la información, se comunica, trabaja y participa en la vida económica y cultural. </p>
+      </div>
+    </div>
+
+    <div class="evento derecha">
+      <div class="contenido">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Computación moderna.jpeg" alt="Computación moderna">
+        <h2>Actualidad</h2>
+        <p>La computación moderna representa un cambio de paradigma fundamental en cómo concebimos, diseñamos e interactuamos con los sistemas de procesamiento de 
+            información. Ha trascendido el modelo tradicional de computación aislada para convertirse en un ecosistema complejo, distribuido e inteligente que permea todos los aspectos de la sociedad contemporánea.</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="index.html" class="volver">👈Regresar</a>
+
+  <footer>
+    &copy; 2025 Línea de Tiempo de la Informática - Proyecto Web
+  </footer>
+</body>
+</html>

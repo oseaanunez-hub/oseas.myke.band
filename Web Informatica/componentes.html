@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes de la Informática</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+                  url('img/fondo-componentes.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #f1f1f1;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.7);
+      border-bottom: 4px solid #ffcc00;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 2.8em;
+      color: #ffcc00;
+      text-shadow: 0 0 15px #ffcc00;
+    }
+
+    .contenido {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(0,0,0,0.6);
+      border-radius: 15px;
+      border: 1px solid #ffcc00;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      line-height: 1.7;
+      font-size: 1.1em;
+    }
+    .contenido h2 {
+      color: #ffcc00;
+      margin-bottom: 15px;
+    }
+    .contenido img {
+      display: block;
+      margin: 20px auto;
+      width: 70%;
+      max-width: 500px;
+      border-radius: 12px;
+      border: 2px solid #ffcc00;
+      box-shadow: 0 0 15px #ffcc00;
+    }
+
+    ul {
+      margin: 20px 0 20px 40px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a.volver {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 18px;
+      background: linear-gradient(135deg, #ffcc00, #ffaa00);
+      color: black;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.volver:hover {
+      background: linear-gradient(135deg, #ffaa00, #ffcc00);
+      box-shadow: 0 0 15px #ffcc00;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.7);
+      border-top: 2px solid #ffcc00;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Componentes de la Informática</h1>
+  </header>
+
+  <section class="contenido">
+    <h2>Hardware</h2>
+    <p>
+      El <b>hardware</b>  constituye la dimensión física y tangible de cualquier sistema informático. 
+      Es la arquitectura concreta sobre la cual descansa la posibilidad misma de la computación. Podemos entenderlo como el
+       cuerpo de la tecnología: un ensamblaje de componentes electrónicos y mecánicos que operan bajo principios de la física 
+       y la ingeniería para ejecutar funciones de procesamiento, almacenamiento y comunicación.
+    </p>
+    <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\hardware.jpeg" alt="Componentes de hardware">
+
+    <h2>Software</h2>
+    <p>
+      El <b>software</b> representa la capa lógica e intangible que dota de propósito y funcionalidad al hardware. 
+      Si el hardware es el cuerpo, el software viene a ser la mente y el alma: un conjunto de instrucciones, algoritmos y datos
+       que dirigen cada acción del sistema. Su naturaleza es abstracta, construida mediante lenguajes de programación que permiten
+        a los humanos expresar complejas secuencias de operaciones en formas comprensibles, que luego son traducidas al lenguaje binario de la máquina. 
+        El software se estructura en capas, comenzando por el sistema operativo, que gestiona los recursos hardware y ofrece servicios esenciales, hasta las aplicaciones
+         de usuario final que resuelven problemas específicos. 
+    </p>
+    <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\software.jpeg" alt="Componentes de software">
+
+    <h2>Redes y Telecomunicaciones</h2>
+    <p>
+      Las <b>redes</b> Las redes de telecomunicaciones forman el tejido conectivo que interliga sistemas y dispositivos, transformando la computación individual en un fenómeno 
+      colectivo y global. Su función es transmitir información a distancia, superando las barreras físicas mediante el uso de señales electromagnéticas, cables de fibra óptica, 
+      enlaces satelitales y ondas radioeléctricas. Más allá de la infraestructura física, las redes se rigen por protocolos y estándares que aseguran la comunicación fiable y eficiente 
+      entre entidades heterogéneas. Protocolos como TCP/IP proveen un lenguaje común para el intercambio de datos, enabling la creación de redes de redes: internet. 
+    </p>
+    <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\redes.jpeg" alt="Redes y telecomunicaciones">
+
+    <h2>Resumen</h2>
+    <ul>
+      <li><b>Hardware:</b> parte física de la computadora.</li>
+      <li><b>Software:</b> programas y sistemas que dan vida al hardware.</li>
+      <li><b>Redes:</b> conectividad e intercambio de información.</li>
+    </ul>
+
+    <a href="index.html" class="volver">👈Regresar</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Componentes de la Informática - Proyecto Web
+  </footer>
+</body>
+</html>

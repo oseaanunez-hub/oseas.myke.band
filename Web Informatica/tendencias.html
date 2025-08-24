@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tendencias de la Informática</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .contenido {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .tarjeta {
+      background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+      border-radius: 15px;
+      padding: 20px;
+      text-align: centerS;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .tarjeta img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      border: 2px solid #ff512f;
+    }
+
+    .tarjeta h3 {
+      margin-bottom: 10px;
+      color: #ffdd57;
+    }
+
+    .tarjeta p {
+      font-size: 1em;
+      color: #e0e0e0;
+    }
+
+    a.volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background: #ff512f;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.volver:hover {
+      background: #dd2476;
+      box-shadow: 0 0 12px #ff512f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #ff512f;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tendencias de la Informática</h1>
+  </header>
+
+  <section class="contenido">
+    <p>
+      Las tendencias en informática representan la evolución constante de la tecnología y su integración en la sociedad,
+       marcando la dirección hacia la cual se orienta la innovación digital. Estas tendencias no son meras modas pasajeras, 
+       sino fuerzas transformadoras que redefinen industrias, habilitan nuevos modelos de negocio y alteran fundamentalmente 
+       la forma en que las personas interactúan con la tecnología y entre sí.
+    </p>
+    <p>
+      El ritmo acelerado de la transformación digital ha convertido a la informática en el eje central del progreso contemporáneo,
+       donde conceptos como inteligencia artificial, computación cuántica y ciberseguridad ya no son especialidades aisladas, sino componentes 
+       interconectados de un ecosistema tecnológico complejo y dinámico.
+    </p>
+
+
+    <div class="grid">
+      <div class="tarjeta">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\IA.png" alt="Inteligencia Artificial">
+        <h3>Inteligencia Artificial (IA)</h3>
+        <p>constituye uno de los campos más transformadores y multidimensionales de la informática moderna, representando la culminación de esfuerzos
+             interdisciplinarios que buscan dotar a las máquinas de capacidades cognitivas tradicionalmente asociadas al ser humano. </p>
+      </div>
+
+      <div class="tarjeta">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\Computación en la Nube.jpeg" alt="Computación en la Nube">
+        <h3>Computación en la Nube</h3>
+        <p>Representa un paradigma fundamental en la evolución de la tecnología de la información, transformando radicalmente la forma en 
+        que las organizaciones y los individuos acceden, gestionan y escalan recursos computacionales. Lejos de ser simplemente un modelo.</div>
+
+      <div class="tarjeta">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\seguridad.jpeg" alt="Ciberseguridad">
+        <h3>Ciberseguridad Avanzada</h3>
+        <p>Representa la evolución de la protección digital más allá de los enfoques tradicionales basados en firewalls y antivirus, hacia un paradigma proactivo,
+             inteligente y adaptativo que aborda amenazas sofisticadas en entornos tecnológicos cada vez más complejos e interconectados.</p>
+      </div>
+
+     
+      <div class="tarjeta">
+        <img src="C:\Users\PC\OneDrive\Desktop\Web Informatica\img\dRealidad Virtual y Aumentada.jpeg" alt="Realidad Virtual y Aumentada">
+        <h3>Realidad Virtual y Aumentada</h3>
+        <p>La Realidad Virtual (VR) y la Realidad Aumentada (AR) representan dos de las tecnologías más transformadoras de 
+            la última década, redefiniendo la forma en que los seres humanos interactúan con la información, el entorno y entre sí.</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="volver">👈Regresar</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Tendencias de la Informática - Proyecto Web
+  </footer>
+</body>
+</html>
